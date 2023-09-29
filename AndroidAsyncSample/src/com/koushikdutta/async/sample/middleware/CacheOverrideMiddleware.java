@@ -22,7 +22,7 @@ public class CacheOverrideMiddleware extends SimpleMiddleware {
     }
 
     @Override
-    public void onHeadersReceived(OnHeadersReceivedDataOnRequestSentData data) {
+    public void onHeadersReceived(OnHeadersReceivedData data) {
         super.onHeadersReceived(data);
 
         // do more checking here, since uri may not necessarily be http or have a host, etc.
